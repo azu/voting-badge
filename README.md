@@ -2,13 +2,46 @@
 
 Simple backend for voting badge.
 
-## Installation
-
-- [ ] Describe the installation process
-
 ## Usage
 
-- [ ] Write usage instructions
+[![Vote](http://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](http://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+
+```markdown
+[![Vote](http://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](http://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+```
+
+### API
+
+#### Get badge img
+
+```
+http://voting-badge.herokuapp.com/img?url={URL}
+```
+
+`{URL}` : string as key
+
+Return badge image url which is used http://shields.io/ 
+
+#### Get number of votes
+
+```
+http://voting-badge.herokuapp.com/count?url={URL}
+```
+
+`{URL}` : string as key
+
+Return number of votes.
+
+#### Vote
+
+```
+http://voting-badge.herokuapp.com/vote?url={URL}
+```
+
+`{URL}` : string as key
+
+Vote to `{URL}` - :+1:
+
 
 ## Contributing
 
