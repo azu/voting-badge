@@ -4,10 +4,10 @@ Simple backend for voting badge.
 
 ## Usage
 
-[![Vote](http://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](http://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+[![Vote](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
 
 ```markdown
-[![Vote](http://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](http://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
+[![Vote](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
 ```
 
 ### API
@@ -15,7 +15,7 @@ Simple backend for voting badge.
 #### Get badge img
 
 ```
-http://voting-badge.herokuapp.com/img?url={URL}
+https://voting-badge.herokuapp.com/img?url={URL}
 ```
 
 `{URL}` : string as key
@@ -29,7 +29,7 @@ GitHub aggressive image caching.
 #### Get number of votes
 
 ```
-http://voting-badge.herokuapp.com/count?url={URL}
+https://voting-badge.herokuapp.com/count?url={URL}
 ```
 
 `{URL}` : string as key
@@ -39,7 +39,7 @@ Return number of votes.
 #### Vote
 
 ```
-http://voting-badge.herokuapp.com/vote?url={URL}
+https://voting-badge.herokuapp.com/vote?url={URL}
 ```
 
 `{URL}` : string as key
