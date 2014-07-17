@@ -22,6 +22,10 @@ http://voting-badge.herokuapp.com/img?url={URL}
 
 Return badge image url which is used http://shields.io/ 
 
+##### NOTE
+
+GitHub aggressive image caching.
+
 #### Get number of votes
 
 ```
