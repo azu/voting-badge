@@ -26,7 +26,8 @@ describe("server", function () {
     describe("/img", function () {
         it("should return badge image url", function (done) {
             request.get(baseURL + "/img?url=" + key, function (error, response, body) {
-                assert(body === badge(initialValue));
+                assert(response.request.redirects.length > 0);
+                assert(response.request.redirects[0].redirectUri === badge(initialValue));
                 done(error);
             });
         });
