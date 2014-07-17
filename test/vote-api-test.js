@@ -11,9 +11,9 @@ describe("vote-api", function () {
     });
     describe("getCount", function () {
         context("when no data", function () {
-            it("should reject error", function () {
-                return shouldRejected(api.getCount(key)).catch(function (error) {
-                    assert(error instanceof Error);
+            it("should return 0", function () {
+                return shouldFulfilled(api.getCount(key)).then(function (value) {
+                    assert(value === 0);
                 })
             });
         });
