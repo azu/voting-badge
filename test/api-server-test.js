@@ -39,5 +39,30 @@ describe("server", function () {
                 }).then(done, done);
             });
         });
+        context("when no referrer", function () {
+            it("should Nice vote", function (done) {
+                request.get(baseURL + "/vote?url=" + key, function (error, response, body) {
+                    assert(body === "Nice Vote!");
+                    done(error);
+                });
+            });
+        });
+        context("when has referrer", function () {
+            it("redirect to back", function (done) {
+                var referrer = "http://example.com/";
+                var options = {
+                    url: baseURL + "/vote?url=" + key,
+                    headers: {
+                        'referrer': referrer,
+                        'User-Agent': 'request'
+                    }
+                };
+                request.get(options, function (error, response, body) {
+                    assert(response.request.redirects.length > 0);
+                    assert(response.request.redirects[0].redirectUri === referrer);
+                    done(error);
+                });
+            });
+        });
     });
 });
