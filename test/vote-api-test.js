@@ -24,7 +24,7 @@ describe("vote-api", function () {
                     done(error);
                 });
             });
-            it("should reject error", function () {
+            it("should return count", function () {
                 return shouldFulfilled(api.getCount(key)).then(function (value) {
                     assert(value === expectedValue);
                 })
