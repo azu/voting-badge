@@ -9,8 +9,12 @@ describe("server", function () {
     var baseURL = 'http://localhost:3000';
     var key = "http://example.com/";
     var initialValue = 0;
-    before(function () {
-        server();
+    before(function (done) {
+        server(function () {
+            backend.ready(function (error) {
+                done(error);
+            })
+        });
     });
     beforeEach(function (done) {
         backend.delKey(key, done);
