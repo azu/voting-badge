@@ -3,11 +3,11 @@ var assert = require("power-assert");
 var shouldFulfilled = require("promise-test-helper").shouldFulfilled;
 var shouldRejected = require("promise-test-helper").shouldRejected;
 var api = require("../lib/vote-api");
-var db = require("../lib/db-manager");
+var backend = require("../lib/backend/backend-switcher").currentBackEnd;
 describe("vote-api", function () {
     var key = "http://example.com/";
     beforeEach(function (done) {
-        db.del(key, done);
+        backend.delKey(key, done);
     });
     describe("getCount", function () {
         context("when no data", function () {
@@ -20,7 +20,7 @@ describe("vote-api", function () {
         context("when has data", function () {
             var expectedValue = 1;
             beforeEach(function (done) {
-                db.put(key, expectedValue, function (error) {
+                backend.putKey(key, expectedValue, function (error) {
                     done(error);
                 });
             });
@@ -45,7 +45,7 @@ describe("vote-api", function () {
         context("when count is 99", function () {
             var currentValue = 99;
             beforeEach(function (done) {
-                db.put(key, currentValue, function (error) {
+                backend.putKey(key, currentValue, function (error) {
                     done(error);
                 });
             });

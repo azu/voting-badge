@@ -2,7 +2,7 @@
 var assert = require("power-assert");
 var server = require("../lib/api-server");
 var request = require("request");
-var db = require("../lib/db-manager");
+var backend = require("../lib/backend/backend-switcher").currentBackEnd;
 var api = require("../lib/vote-api");
 var badge = require("../lib/badge-service");
 describe("server", function () {
@@ -13,7 +13,7 @@ describe("server", function () {
         server();
     });
     beforeEach(function (done) {
-        db.del(key, done);
+        backend.delKey(key, done);
     });
     describe("/count", function () {
         it("should return count initial value", function (done) {
