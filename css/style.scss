@@ -1,0 +1,40 @@
+.main {
+  .output {
+    height: 100px;
+    text-align: center;
+    textarea {
+      margin: auto;
+      width: 25em;
+      height: 4em;
+      display: block;
+    }
+  }
+  margin: auto;
+  width: 600px;
+  input {
+    width: 20em;
+  }
+  .app-header {
+    margin-bottom: 3em;
+    text-align: center;
+    h1, h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      line-height: 1;
+      text-rendering: optimizeLegibility;
+    }
+    h1 {
+      font-size: 300%;
+      font-weight: 100;
+    }
+    h2 {
+      font-size: 150%;
+      font-weight: 100;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 100px;
+}
+

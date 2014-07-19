@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>:1: Voting Badge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Voting Badge</a>
+        <ul>
+            <li><a href="https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge"><img
+                    src="https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge"/></a></li>
+            <li>
+                <iframe src="http://ghbtns.com/github-btn.html?user=azu&repo=voting-badge&type=watch&count=true"
+                        allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="app-header">
+
+        <h1>Voting Badge</h1>
+
+        <h2>Create :+1: Badge</h2>
+    </div>
+    <div id="js-input" class="input">
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="js-url">URL</label>
+                    <input id="js-url" type="url" placeholder="http://">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="js-output" class="output">
+        <label for="js-copy-box">Copy Markdown</label><textarea id="js-copy-box" readonly></textarea>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
