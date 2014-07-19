@@ -2,6 +2,8 @@
 
 Simple backend for voting badge.
 
+Create Badge at [Here](http://azu.github.io/voting-badge/ ":1: Voting Badge")
+
 ## Usage
 
 [![Vote](https://voting-badge.herokuapp.com/img?url=https://github.com/azu/voting-badge)](https://voting-badge.herokuapp.com/vote?url=https://github.com/azu/voting-badge)
