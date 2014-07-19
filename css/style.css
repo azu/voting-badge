@@ -1,0 +1,30 @@
+.main {
+  margin: auto;
+  width: 600px; }
+  .main .output {
+    height: 100px;
+    text-align: center; }
+    .main .output textarea {
+      margin: auto;
+      width: 25em;
+      height: 4em;
+      display: block; }
+  .main input {
+    width: 20em; }
+  .main .app-header {
+    margin-bottom: 3em;
+    text-align: center; }
+    .main .app-header h1, .main .app-header h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      line-height: 1;
+      text-rendering: optimizeLegibility; }
+    .main .app-header h1 {
+      font-size: 300%;
+      font-weight: 100; }
+    .main .app-header h2 {
+      font-size: 150%;
+      font-weight: 100; }
+
+.header {
+  margin-bottom: 100px; }
