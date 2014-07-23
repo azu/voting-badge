@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "bluebird": "^2.2.2",
+    "canvas": "^1.1.5",
     "express": "^4.6.1",
     "gh-badges": "^1.0.0",
     "hiredis": "^0.1.17",
