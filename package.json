@@ -23,14 +23,15 @@
   "dependencies": {
     "bluebird": "^2.2.2",
     "express": "^4.6.1",
+    "gh-badges": "^1.0.0",
     "hiredis": "^0.1.17",
     "redis": "^0.11.0"
   },
-  "optionalDependencies":{
-  "level": "^0.18.0",
-  "level-incr": "0.0.3",
-  "leveldown": "^0.10.2",
-  "levelup": "^0.18.5"
+  "optionalDependencies": {
+    "level": "^0.18.0",
+    "level-incr": "0.0.3",
+    "leveldown": "^0.10.2",
+    "levelup": "^0.18.5"
   },
   "devDependencies": {
     "espower-loader": "^0.7.1",
