@@ -32,7 +32,7 @@
         <h2>Create :+1: Badge</h2>
     </div>
     <div id="js-input" class="input">
-        <form class="pure-form pure-form-aligned">
+        <form class="pure-form pure-form-aligned" onsubmit="return false;">
             <fieldset>
                 <div class="pure-control-group">
                     <label for="js-url">URL</label>
@@ -42,7 +42,7 @@
         </form>
     </div>
     <div id="js-output" class="output">
-        <label for="js-copy-box">Copy Markdown</label><textarea id="js-copy-box" readonly></textarea>
+        <label for="js-copy-box">Copy Markdown</label><textarea id="js-copy-box"></textarea>
     </div>
 </div>
 <script src="./js/script.js"></script>
