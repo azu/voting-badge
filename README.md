@@ -49,6 +49,14 @@ https://voting-badge.herokuapp.com/vote?url={URL}
 Vote to `{URL}` - :+1:
 
 
+## Installation
+
+Previously install cario. For system-specific installation view the [Automattic/node-canvas Wiki](https://github.com/Automattic/node-canvas/wiki/_pages "Pages · Automattic/node-canvas Wiki").
+
+``` sh
+npm install
+```
+
 ## Contributing
 
 1. Fork it!
