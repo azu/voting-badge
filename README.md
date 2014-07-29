@@ -51,10 +51,20 @@ Vote to `{URL}` - :+1:
 
 ## Installation
 
-Previously install cario. For system-specific installation view the [Automattic/node-canvas Wiki](https://github.com/Automattic/node-canvas/wiki/_pages "Pages · Automattic/node-canvas Wiki").
+Previously, Install dependency.
+
+* Install cario. For system-specific installation view the [Automattic/node-canvas Wiki](https://github.com/Automattic/node-canvas/wiki/_pages "Pages · Automattic/node-canvas Wiki").
+* Install [Redis](http://redis.io/download "Download – Redis")
 
 ``` sh
 npm install
+```
+
+### Develop
+
+```sh
+redis-server # launch redis-server
+npm start
 ```
 
 ## Contributing
