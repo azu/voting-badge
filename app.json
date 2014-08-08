@@ -1,6 +1,11 @@
 {
     "name": "voting-badge",
     "description": "Voting badge like Travis CI",
+    "website": "https://github.com/azu/voting-badge",
     "repository": "https://github.com/azu/voting-badge",
-    "keywords": ["node", "badge", "canvas", "node-canvas", "GitHub"]
+    "keywords": ["node", "badge", "canvas", "node-canvas", "GitHub"],
+    "env": {
+        "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env",
+    },
+    "addons": ["redistogo:nano"]
 }
