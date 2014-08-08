@@ -1,4 +1,6 @@
-# voting-badge
+# voting-badge 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 Simple backend for voting badge.
 
