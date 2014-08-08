@@ -1,0 +1,6 @@
+{
+    "name": "voting-badge",
+    "description": "Voting badge like Travis CI",
+    "repository": "https://github.com/azu/voting-badge",
+    "keywords": ["node", "badge", "canvas", "node-canvas", "GitHub"]
+}
