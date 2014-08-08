@@ -5,7 +5,7 @@
     "repository": "https://github.com/azu/voting-badge",
     "keywords": ["node", "badge", "canvas", "node-canvas", "GitHub"],
     "env": {
-        "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env",
+        "BUILDPACK_URL": "https://github.com/mojodna/heroku-buildpack-multi.git#build-env"
     },
     "addons": ["redistogo:nano"]
 }
