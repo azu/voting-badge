@@ -19,10 +19,16 @@ Create Badge at [Here](http://azu.github.io/voting-badge/ ":1: Voting Badge")
 #### Get badge img
 
 ```
-https://voting-badge.herokuapp.com/img?url={URL}
+https://voting-badge.herokuapp.com/img?url={URL}&style={STYLE}&label={LABEL}&color={COLOR}
 ```
 
 `{URL}` : string as key
+
+`{STYLE}` *(optionnal)* : string as [style](https://shields.io/#styles) (default : `flat`)
+
+`{LABEL}` *(optionnal)* : string as label (default : `Vote++`)
+
+`{COLOR}` *(optionnal)* : string as [color](https://shields.io/#colors) (default : `green`)
 
 Return badge image url which is used http://shields.io/ 
 
